@@ -181,7 +181,7 @@ export default function App() {
       <div className="fixed top-[45%] right-[20%] w-72 h-72 glow-orange rounded-full blur-[110px] pointer-events-none z-0" />
 
       {/* Embedded application layout wrap modeled after high end glass UI components */}
-      <div className="max-w-6xl w-full mx-auto my-6 md:my-12 relative z-10 rounded-2xl border border-white/5 bg-[#0d1323]/35 backdrop-blur-3xl shadow-2xl overflow-hidden glass-container flex flex-col transition-all">
+      <div className="w-full relative z-10 border border-white/5 bg-[#0d1323]/35 backdrop-blur-3xl shadow-2xl overflow-hidden glass-container flex flex-col transition-all">
         
         {/* Navigation Headbar Panel */}
         {profile && (
@@ -283,7 +283,7 @@ export default function App() {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 pt-2">
               {filteredVideos.map((video) => (
                 <div key={video.id} className="h-full">
                   <VideoCard
