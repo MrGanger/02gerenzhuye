@@ -57,27 +57,38 @@ export default function AdminPanel({ onAddVideo }: AdminPanelProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
     setFeedback(null);
+
+    if (!title.trim()) {
+      setFeedback({ type: "error", msg: "请输入作品名称" });
+      return;
+    }
+    if (!shortDesc.trim()) {
+      setFeedback({ type: "error", msg: "请输入作品卡片摘要简介" });
+      return;
+    }
+    if (!description.trim()) {
+      setFeedback({ type: "error", msg: "请输入详尽创作理念简介" });
+      return;
+    }
 
     const activeCategory = category === "自定义" ? customCategory.trim() : category;
     if (!activeCategory) {
       setFeedback({ type: "error", msg: "请输入自定义类别名称" });
-      setLoading(false);
       return;
     }
 
     if (sourceType === "upload" && !videoFile) {
       setFeedback({ type: "error", msg: "请选择一个要上传的视频文件" });
-      setLoading(false);
       return;
     }
 
     if (sourceType === "path" && !manualUrl.trim()) {
       setFeedback({ type: "error", msg: "请输入视频的文件路径或在线链接" });
-      setLoading(false);
       return;
     }
+
+    setLoading(true);
 
     // Pack FormData
     const formData = new FormData();
@@ -158,7 +169,6 @@ export default function AdminPanel({ onAddVideo }: AdminPanelProps) {
                   <label className="block text-xs font-semibold text-slate-500 mb-1.5">作品名称 / 标题 *</label>
                   <input
                     type="text"
-                    required
                     placeholder="例如: 探索自然三维先导片"
                     className="w-full bg-[#f8fafc] border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-3 py-2 text-sm text-slate-800 focus:outline-none transition-colors"
                     value={title}
@@ -185,7 +195,6 @@ export default function AdminPanel({ onAddVideo }: AdminPanelProps) {
                     {category === "自定义" && (
                       <input
                         type="text"
-                        required
                         placeholder="分类名称"
                         className="flex-1 bg-[#f8fafc] border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-3 py-2 text-sm text-slate-800 focus:outline-none animate-in slide-in-to-right-2 duration-150"
                         value={customCategory}
@@ -271,7 +280,6 @@ export default function AdminPanel({ onAddVideo }: AdminPanelProps) {
                 <label className="block text-xs font-semibold text-slate-500 mb-1.5">作品卡片摘要简介 (最多2行) *</label>
                 <input
                   type="text"
-                  required
                   placeholder="展示在列表卡片上的简短介绍，如 50 字以内的特色说明"
                   className="w-full bg-[#f8fafc] border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-3 py-2 text-sm text-slate-800 focus:outline-none transition-colors"
                   value={shortDesc}
@@ -284,7 +292,6 @@ export default function AdminPanel({ onAddVideo }: AdminPanelProps) {
                 <label className="block text-xs font-semibold text-slate-500 mb-1.5">详尽创作理念简介 *</label>
                 <textarea
                   rows={4}
-                  required
                   placeholder="项目的大背景，主要的灵感来源，创作过程，镜头调度，以及遇到的难点解决，全方位展示你的专业技能。"
                   className="w-full bg-[#f8fafc] border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-3 py-2 text-sm text-slate-800 focus:outline-none transition-colors"
                   value={description}

@@ -8,3 +8,5 @@ coverage/
 !.env.example
 videos/
 项目/
+public/uploads/
+public/thumbnails/

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { VideoItem } from "../types";
 import { X, Calendar, Wrench, UserRound, Tag, AlertTriangle, RefreshCw } from "lucide-react";
 
@@ -9,7 +9,16 @@ interface VideoDetailModalProps {
 
 export default function VideoDetailModal({ video, onClose }: VideoDetailModalProps) {
   const [videoError, setVideoError] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const isLocalFileUrl = video.videoUrl.startsWith("/uploads/");
+
+  useEffect(() => {
+    if (videoRef.current && !videoError) {
+      videoRef.current.play().catch(() => {
+        // Autoplay with sound blocked by browser, user can manually play
+      });
+    }
+  }, [video.videoUrl, videoError]);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md overflow-y-auto">
@@ -41,10 +50,10 @@ export default function VideoDetailModal({ video, onClose }: VideoDetailModalPro
           {video.videoUrl && !videoError ? (
             <video
               key={video.videoUrl}
+              ref={videoRef}
               src={video.videoUrl}
               controls
               autoPlay
-              muted
               playsInline
               onError={() => setVideoError(true)}
               className="w-full h-full max-h-[50vh] object-contain"
