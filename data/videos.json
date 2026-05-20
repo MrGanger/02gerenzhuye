@@ -1,0 +1,118 @@
+[
+  {
+    "id": "v-1779259359876",
+    "title": "便捷西海岸一网轻松办-政务",
+    "category": "3D短片",
+    "videoUrl": "C:\\Users\\Administrator\\Desktop\\00_Cursor\\02gerenzhuye\\videos\\政务30秒_1.mp4",
+    "thumbnailUrl": "/thumbnails/thumb-1779259446230-808540253.png",
+    "shortDesc": "青岛APP，便捷西海岸一网轻松办-政务",
+    "description": "青岛APP，便捷西海岸一网轻松办-政务",
+    "creationDate": "2021-07-16",
+    "role": "3D设计师",
+    "tools": [
+      "C4D，AE"
+    ],
+    "duration": "00:35"
+  },
+  {
+    "id": "v-1779258950539",
+    "title": "《大汉气象-长袖折腰舞》",
+    "category": "3D短片",
+    "videoUrl": "/uploads/changxiu.mp4",
+    "thumbnailUrl": "/thumbnails/thumb-1779258975820-264129976.jpg",
+    "shortDesc": "《大汉气象-长袖折腰舞》",
+    "description": "《大汉气象-长袖折腰舞》",
+    "creationDate": "2026-05-20",
+    "role": "导演，AI建模师，剪辑",
+    "tools": [
+      "Pr，Seedance2.0，Gpt-image-2，Gemini"
+    ],
+    "duration": "02:00"
+  },
+  {
+    "id": "v-1779253634783",
+    "title": "羽人戏凤图",
+    "category": "3D短片",
+    "videoUrl": "/uploads/h264-video-1779253634077-347779656.mp4",
+    "thumbnailUrl": "/thumbnails/thumb-1779257408507-505043295.jpg",
+    "shortDesc": "汉代羽人戏凤图汉画石像3D动画",
+    "description": "汉代羽人戏凤图汉画石像3D动画",
+    "creationDate": "2026-05-20",
+    "role": "3D动画、合成",
+    "tools": [
+      "C4D，AE"
+    ],
+    "duration": "00:31"
+  },
+  {
+    "id": "v-3",
+    "title": "《未来纪元》宣传片",
+    "category": "宣传视频",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&auto=format&fit=crop&q=80",
+    "shortDesc": "次世代自动驾驶超跑穿越未来霓虹都市的影视级概念商业视觉大片。",
+    "description": "这是为某先锋概念载具品牌定制的重磅首发宣传片。旨在虚构并还原一个次世代赛博智慧都市。重点攻克了超大体量三维建筑背景贴图流，以及载具在高速运动下极其写实的镜面反射与焦散效果，让整个雨夜高架疾驰镜头具备无与伦比的CG电影质感。影片节奏敏捷凌厉，极具科技冲击力。",
+    "creationDate": "2024-05-04",
+    "role": "CG导演 / 载具建模设计 / 后期总监",
+    "duration": "01:38",
+    "tools": [
+      "Unreal Engine 5",
+      "Cinema 4D",
+      "After Effects",
+      "Nuke"
+    ]
+  },
+  {
+    "id": "v-4",
+    "title": "《沙海之旅》三维短片",
+    "category": "三维短片",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1547234935-80c7145ec969?w=800&auto=format&fit=crop&q=80",
+    "shortDesc": "在寂静恢弘的金色沙漠腹地，探索远古失落遗迹的时画诗篇。",
+    "description": "《沙海之旅》是对无垠自然的崇高致敬。全片着重于沙粒流体动力学与大画幅风沙侵蚀材质的研究。遗迹本身融合了希腊古典石质美学与前瞻未来派的极简金属线条，借由清晨五点钟微弱的低角度日光漫射，营造出一种远古文明悄然苏醒的神圣仪式感。展现了技术、美术与孤独哲学的深度交织。",
+    "creationDate": "2023-08-25",
+    "role": "三维模拟师 / 材质光影师 / 导演",
+    "duration": "04:20",
+    "tools": [
+      "Blender",
+      "Houdini",
+      "DaVinci Resolve"
+    ]
+  },
+  {
+    "id": "v-5",
+    "title": "《光影之间》产品宣传片",
+    "category": "视觉设计",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80",
+    "shortDesc": "高端科技智能音箱的光影形体美学概念设计与镜头特写阐述。",
+    "description": "《光影之间》是针对现代轻奢数码产品的一场极端打光实验。在完全黑暗的影棚视效模型中，通过多组移动线光源，擦过智能声学设备表面的哑光金属材质以及铝合金滤网网面，勾勒出宛若自然雕塑的外观形体。视频侧重微距镜头和声学振膜在低频震动下的动态起伏，以纯粹克制的画面格调体现大师设计之美。",
+    "creationDate": "2024-01-15",
+    "role": "视觉设计师 / 创意渲染师 / 脚本策划",
+    "duration": "01:15",
+    "tools": [
+      "KeyShot",
+      "Cinema 4D",
+      "After Effects",
+      "AI"
+    ]
+  },
+  {
+    "id": "v-6",
+    "title": "《极光下的村庄》三维动画",
+    "category": "三维短片",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=800&auto=format&fit=crop&q=80",
+    "shortDesc": "复刻北欧童话冬夜，天空中飞舞的极光与地面积雪木屋的温暖灯火。",
+    "description": "本动画作品致力于高精度还原冰雪反光和绚烂冬夜极光的折射现象。在Blender中精心编写了自定义极光波动着色器（Polar Aurora Shader），并通过体积零度微尘渲染让空中的雪夜极光灵动自如。厚重白雪覆盖的小镇木屋窗边，透出温暖和煦的泛橘黄炭火光芒，全片冷暖色彩渲染炉火纯青，是一部极具情感表达的CG动画。",
+    "creationDate": "2023-12-22",
+    "role": "独立三维艺术家 / 灯光编排 / 调色师",
+    "duration": "02:56",
+    "tools": [
+      "Blender",
+      "Unreal Engine 5",
+      "After Effects",
+      "DaVinci"
+    ]
+  }
+]

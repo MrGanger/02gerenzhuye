@@ -1,0 +1,6 @@
+{
+  "name": "个人项目视频作品集",
+  "description": "一个用于展示个人3D短片和宣传视频的个人网站，支持在线播放、查看内容简介以及自定义增加、删除视频。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
