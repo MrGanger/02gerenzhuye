@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+videos
+项目
+*.log
+.git
