@@ -8,7 +8,7 @@ import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 
 const ffmpegPath = ffmpegInstaller.path;
 
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 const app = express();
 
 // Set up JSON body parsers

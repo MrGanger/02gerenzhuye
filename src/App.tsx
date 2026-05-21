@@ -24,6 +24,14 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("全部");
 
+  // Check URL for admin mode on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("admin")) {
+      setEditorMode(true);
+    }
+  }, []);
+
   // Fetch initial profile and videos list
   useEffect(() => {
     async function initData() {
@@ -188,9 +196,6 @@ export default function App() {
           <Navbar
             profile={profile}
             editorMode={editorMode}
-            setEditorMode={setEditorMode}
-            onEditProfileTrigger={() => setIsEditingProfile(true)}
-            onResetTrigger={handleResetProfile}
           />
         )}
 
@@ -268,7 +273,12 @@ export default function App() {
                   您可以即时向本地文件夹补充3D渲染素材、更新项目，或直接删除已有的演示案例。
                 </p>
               </div>
-              <AdminPanel onAddVideo={handleAddVideo} />
+              <div className="flex items-center gap-2 flex-wrap">
+                <button onClick={() => setIsEditingProfile(true)} className="px-3 py-1.5 bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/25 text-indigo-300 rounded-lg text-[10px] font-bold transition cursor-pointer">编辑资料</button>
+                <button onClick={handleResetProfile} className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 text-slate-400 hover:text-red-400 rounded-lg text-[10px] font-bold transition cursor-pointer">重置数据</button>
+                <AdminPanel onAddVideo={handleAddVideo} />
+                <button onClick={() => setEditorMode(false)} className="px-3 py-1.5 bg-red-500/10 hover:bg-red-500/20 border border-red-500/20 text-red-400 rounded-lg text-[10px] font-bold transition cursor-pointer">退出管理</button>
+              </div>
             </div>
           )}
 
