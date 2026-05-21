@@ -14,14 +14,14 @@ export default function Hero({ profile }: HeroProps) {
   };
 
   return (
-    <section id="home" className="relative z-10 border-b border-white/5 overflow-hidden">
+    <section id="home" className="relative z-10 border-b border-white/5 overflow-hidden min-h-[280px] md:min-h-0">
 
       {/* Full-width portrait photo as hero background — subject on the right, dark negative space on the left */}
       <div className="absolute inset-0">
         <img
           src="/avatar.png"
           alt={profile.name}
-          className="w-full h-full object-cover object-[65%_calc(50%+100px)]"
+          className="w-full h-full object-cover object-[85%_center] md:object-[65%_calc(50%+100px)]"
           style={{
             maskImage: "linear-gradient(to bottom, black 0%, black 75%, transparent 100%), linear-gradient(to right, black 0%, black 85%, transparent 100%), linear-gradient(to top, black 0%, black 80%, transparent 100%)",
             WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 75%, transparent 100%), linear-gradient(to right, black 0%, black 85%, transparent 100%), linear-gradient(to top, black 0%, black 80%, transparent 100%)",
