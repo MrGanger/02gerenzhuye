@@ -36,7 +36,7 @@ export default function Hero({ profile }: HeroProps) {
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-indigo-500/8 rounded-full blur-[90px] pointer-events-none" />
 
       {/* Text content — overlaid on the dark left portion of the photo */}
-      <div className="relative z-20 pl-[150px] pr-6 py-12 md:py-20">
+      <div className="relative z-20 pl-4 md:pl-[150px] pr-4 md:pr-6 py-12 md:py-20">
         <div className="max-w-xl text-left space-y-5">
 
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/5 text-[11px] font-bold text-indigo-300 tracking-wider uppercase">
