@@ -10,9 +10,9 @@ export default function AboutAndSkills() {
 
   const skillTracks = [
     { name: "三维动画 (C4D / Blender)", percentage: 90, color: "bg-indigo-500 shadow-indigo-500/35" },
-    { name: "影视后期 (AE / PR / DaVinci)", percentage: 85, color: "bg-teal-500 shadow-teal-500/35" },
+    { name: "影视后期 (AE / PR)", percentage: 85, color: "bg-teal-500 shadow-teal-500/35" },
     { name: "创意视觉设计 (PS / AI / Figma)", percentage: 80, color: "bg-purple-500 shadow-purple-500/35" },
-    { name: "合成特效与渲染 (Nuke / UE5)", percentage: 75, color: "bg-sky-500 shadow-sky-500/35" }
+    { name: "AI动画全流程（Seedance2.0 / Gemini / GPT）", percentage: 75, color: "bg-sky-500 shadow-sky-500/35" }
   ];
 
   return (
@@ -97,7 +97,7 @@ export default function AboutAndSkills() {
             <Server className="w-3 h-3 text-purple-400" /> UE5 Sequencer
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-sky-500/10 border border-sky-500/20 text-[10px] font-bold text-sky-300 tracking-wider font-mono">
-            <ShieldCheck className="w-3 h-3 text-sky-400" /> DaVinci HDR
+            <ShieldCheck className="w-3 h-3 text-sky-400" /> Seedance AI
           </span>
         </div>
       </div>
