@@ -8,5 +8,4 @@ coverage/
 !.env.example
 videos/
 项目/
-public/uploads/
-public/thumbnails/
+# 视频和缩略图已上git（压缩后<100MB）
